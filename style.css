@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient( #583, #235);
+}
+
+.container{
+    width: 25%;
+    min-width: fit-content;
+    border-radius: 5px;
+}
+
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: rgb(201, 218, 194);
+    padding: 0.5em;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#ac{
+    grid-column: 1/span 2;
+}
+
+#equals{
+    grid-column: 3/span 2;
+}
+
+.primary-input,
+.secondary-input{
+    background-color: rgba(0, 0, 0, 0.885);
+               max-width: 350px;
+              height: fit-content;
+          min-height: 30px;
+          text-align: right;
+             padding: 0.1em 0.5em;
+           word-wrap: break-word;
+          word-break: break-all; 
+}
+
+
+.secondary-input{
+    color: white;
+    font-size: 1.4em;
+    font-weight: 550;
+}
+
+.primary-input{
+    color: rgb(199, 194, 194);
+    font-size: 1.2em;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+}
+
+#equals,
+.operator,
+#del,
+#ac,
+.nums{
+    font-size: 1.5em;
+    padding: 0.3em;
+    background-color: rgb(201, 218, 194);
+    outline: none;
+    border: 1px rgb(234, 238, 232) solid;
+    box-shadow: 5px 3px rgba(56, 56, 56, 0.522), -2px -3px rgb(228, 233, 227) ;
+    margin: 0.25em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 
+Button hover effects
+
+#equals:hover,
+.operator:hover,
+#del:hover,
+#ac:hover,
+.nums:hover{
+    background-color: rgb(255, 255, 255);
+} */
+
+#equals:active,
+.operator:active,
+#del:active,
+#ac:active,
+.nums:active{
+    transform: scale(0.95);
+}
